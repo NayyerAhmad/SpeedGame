@@ -11,6 +11,32 @@
     <title>SpeedGame</title>
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <h1>Help the Farmer</h1>
+            <p>Get as many farms as possible!</p>
+            <div class="farm_button">
+                <div class="farm_button"></div>
+                <div class="farm_button"></div>
+                <div class="farm_button"></div>
+                <div class="farm_button"></div>
+            </div>
+            <div class="score">
+                <p>You helped the farmer in <span>0</span> farms</p>
+            </div>
+            <div class="game-controls">
+                <button type="button" class="game_start" id="start">Start</button>
+                <button type="button" class="game_stop" id="stop">Start</button>
+            </div>
+        </div>
+        <section id="overlay">
+            <div class="modal">
+                <p>You missed a farm, try again</p>
+                <p id="result"></p>
+                <button type="button" id="end">Close</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
