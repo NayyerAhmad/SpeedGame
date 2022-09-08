@@ -43,7 +43,7 @@ main {
 }
 button {
     padding: 20px;
-    margin-left: 90px;
+    margin-left: 10rem;
     border: none;
     border-radius: 2rem;
     cursor: pointer;
@@ -52,6 +52,10 @@ button {
 .farm_buttons {
     display: flex;
     justify-content: space-between;
+}
+
+#start {
+    margin-left: 15rem;
 }
 
 .farm_button {
@@ -67,9 +71,64 @@ button {
     cursor: pointer;
 }
 
+.farm_button.active {
+    background-image: url(images/field.jpg);
+    background-size: cover;
+}
+
+.farm_button:first-child {
+    background-color: rgb(184, 138, 138);
+}
+
+.farm_button:nth-child(2) {
+    background-color: beige;
+}
+
+.farm_button:nth-child(3) {
+    background-color: rgb(0, 225, 255);
+}
+
+.farm_button:nth-child(4) {
+    background-color: rgb(130, 195, 112);
+}
+
 .score {
     font-size: 25px;
     font-weight: 700;
     align-items: center;
 }
 
+.game-controls button {
+    margin: 3px;
+}
+/* Hide the stop bitton */
+#stop {
+    display: none;
+}
+
+#overlay {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding-left: 50rem;
+    justify-content: center;
+    /* need to hide it */
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 50%;
+    z-index: 100;
+}
+
+/* #end {
+    fix it to come to middle
+} */
+
+.modal {
+    width: 500rem;
+    height: 20%;
+    border-radius: 1rem;
+    position: relative;
+    background-color: white;
+}
