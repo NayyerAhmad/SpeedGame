@@ -45,7 +45,7 @@ const startGame = () => {
 
     active = nextFarm;
     timer = setTimeout(startGame, pace);
-    pace -= 15;
+    pace -= 25;
 
     if (rounds >= 4) {
         endGame();
